@@ -38,7 +38,7 @@
     </div>
     <div id="SIGNUP"><button class="btn B1">SIGN UP</button></div>
 
-    <div id="LOGIN"><button class="btn B2">LOGIN</button></div>
+    <div id="LOGIN"><button class="btn B2" id="btn2">LOGIN</button></div>
 
 
 
@@ -105,10 +105,11 @@
                         <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
-                        <form role="form">
+                        <form role="form" action="backend/login.php" method="post">
+
                             <div class="form-group">
-                                <label for="Compmail">Company Email</label>
-                                <input type="email" class="form-control" id="Compmail" placeholder="Enter organization e-mail id">
+                                <label for="uname">Username</label>
+                                <input type="email" class="form-control" id="uname" placeholder="Enter username:">
                             </div>
 
                             <div class="form-group">
@@ -124,6 +125,7 @@
                     <div class="modal-footer" style="padding:40px 50px;">
                         <a href="#" style="align:right;"> Forgot password?</a>
                     </div>
+
 
                 </div>
 
