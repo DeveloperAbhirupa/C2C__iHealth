@@ -1,0 +1,57 @@
+.carousel-item{
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.I1{
+
+    filter: grayscale(100%);
+}
+
+.horizontal-center{
+    margin-left: 50%;
+}
+
+
+
+.img-logo{
+    width: 50%;
+    position: absolute;
+    z-index: 100;
+}
+
+.vertical-center{
+    margin-top: 30vh;
+    transform: translate(-50%,-50%);
+
+}
+
+#SIGNUP{
+    position: absolute;
+    background: transparent;
+    filter: opacity(0.4);
+    z-index: 100;
+    width: 7%;
+    margin-top: -20%;
+    margin-left: 38%;
+}
+#LOGIN{
+    position: absolute;
+
+    font-family: 'Nova Square', cursive;
+    font-size: 50px;
+    background: transparent;
+    filter: opacity(0.4);
+    z-index: 100;
+    width: 7%;
+    margin-top: -25%;
+    margin-left: 38%;
+}
+
+.B1,.B2{
+    width:350%;
+    border: black;
+    font-family: 'Nova Square', cursive;
+    font-size: 50px;
+}
