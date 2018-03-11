@@ -2,6 +2,7 @@
     <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <title>Swasthya</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -36,9 +37,10 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div id="SIGNUP"><button class="btn B1">SIGN UP</button></div>
+    <div id="SIGNUP"><button class="btn B1" id="btn">SIGN UP AS DOCTOR</button></div>
 
-    <div id="LOGIN"><button class="btn B2" id="btn2">LOGIN</button></div>
+    <div id="LOGIN1"><button class="btn B2" id="btn2">LOGIN</button></div>
+    <div id="LOGIN2"><button class="btn B3" id="btn3">SIGNUP AS USER</button></div>
 
 
 
@@ -52,36 +54,90 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header" style="padding:35px 50px;">
+
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
-                        <form role="form">
+                        <form role="form" action="backend/login.php" method="post">
+
 
                             <div class="form-group">
-                                <label for="organization">Organization</label>
-                                <input type="text" class="form-control" id="organization" placeholder="Enter organization name">
+                                <label for="uname">Username</label>
+                                <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter user-name">
                             </div>
                             <div class="form-group">
-                                <label for="Compmail">Company Email</label>
-                                <input type="email" class="form-control" id="Compmail" placeholder="Enter organization e-mail id">
+                                <label for="psw">Password</label>
+                                <input type="password" class="form-control" id="psw" name="psw" placeholder="Enter password">
                             </div>
                             <div class="form-group">
-                                <label for="Compweb">Company Website url</label>
-                                <input type="url" class="form-control" id="Compweb" placeholder="Enter organization website url">
+                                <label for="psw2">Re-enter Password</label>
+                                <input type="url" class="form-control" id="psw2" placeholder="Re-enter password">
                             </div>
                             <div class="form-group">
-                                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                                <label for="email"><span class="glyphicon glyphicon-eye-open"></span>E-Mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
                             </div>
                             <div class="form-group">
-                                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Re-enter Password</label>
-                                <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                                <label for="psw">Phone Number</span></label>
+                                <input type="number" class="form-control" id="num" placeholder="Enter phone-number">
                             </div>
+                            <div class="form-group">
+                             Select image to upload:
+                                <input type="file" name="docimg" id=docimg"><BR>
+                                <input type="submit" value="Upload Image" name="submit"></div>
                             <div class="checkbox">
                                 <label><input type="checkbox" value="" unchecked>I am not a robot</label>
                             </div>
-                            <button type="submit" class="btn B2 btn-block"><span class="glyphicon glyphicon-off"></span> Sign Me Up</button>
+                            <button type="submit" class="btn B4 btn-block"><span class="glyphicon glyphicon-off"></span> Sign Me Up</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div> <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form" action="backend/login.php" method="post">
+
+
+                            <div class="form-group">
+                                <label for="uname">Username</label>
+                                <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter user-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw">Password</label>
+                                <input type="password" class="form-control" id="psw" name="psw" placeholder="Enter password">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw2">Re-enter Password</label>
+                                <input type="url" class="form-control" id="psw2" placeholder="Re-enter password">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span class="glyphicon glyphicon-eye-open"></span>E-Mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw">Phone Number</span></label>
+                                <input type="number" class="form-control" id="num" placeholder="Enter phone-number">
+                            </div>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" unchecked>I am not a robot</label>
+                            </div>
+                            <button type="submit" class="btn B4 btn-block"><span class="glyphicon glyphicon-off"></span> Sign Me Up</button>
                         </form>
                     </div>
 
@@ -90,6 +146,12 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <!--USER TYPE-->
+
 
 
 
@@ -119,7 +181,7 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="" unchecked>Remember Me</label>
                             </div>
-                            <button type="submit" class="btn B2 btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                            <a href="main1.html"><button type="submit" class="btn B3 btn-block">Login</button></a>
                         </form>
                     </div>
                     <div class="modal-footer" style="padding:40px 50px;">
@@ -137,8 +199,15 @@
 
     <script>
         $(document).ready(function(){
+
             $("#btn").click(function(){
                 $("#myModal").modal();
+            });
+        });
+        $(document).ready(function(){
+
+            $("#btn3").click(function(){
+                $("#myModal3").modal();
             });
         });
 
