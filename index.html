@@ -37,15 +37,14 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div id="SIGNUP"><button class="btn B1" id="btn">SIGN UP AS DOCTOR</button></div>
-
+    <div id="SIGNUP"><button class="btn B1" id="btn1">SIGN UP AS DOCTOR</button></div>
     <div id="LOGIN1"><button class="btn B2" id="btn2">LOGIN</button></div>
-    <div id="LOGIN2"><button class="btn B3" id="btn3">SIGNUP AS USER</button></div>
+    <div id="SIGNUP2"><button class="btn B3" id="btn3">SIGNUP AS USER</button></div>
 
 
 
 
-
+    <!--Signup as doctor-->
     <div class="container">
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
@@ -59,7 +58,7 @@
                         <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
-                        <form role="form" action="backend/login.php" method="post">
+                        <form role="form" action="./lol.php" method="post">
 
 
                             <div class="form-group">
@@ -110,7 +109,7 @@
                         <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
                     </div>
                     <div class="modal-body" style="padding:40px 50px;">
-                        <form role="form" action="backend/login.php" method="post">
+                        <form role="form" action="./lol.php" method="post">
 
 
                             <div class="form-group">
@@ -200,7 +199,7 @@
     <script>
         $(document).ready(function(){
 
-            $("#btn").click(function(){
+            $("#btn1").click(function(){
                 $("#myModal").modal();
             });
         });

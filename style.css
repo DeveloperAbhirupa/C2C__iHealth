@@ -30,28 +30,43 @@
 #SIGNUP{
     position: absolute;
     background: transparent;
-    filter: opacity(0.4);
+    filter: opacity(0.8);
     z-index: 100;
     width: 7%;
     margin-top: -20%;
     margin-left: 38%;
 }
-#LOGIN{
+#LOGIN1{
     position: absolute;
-
     font-family: 'Nova Square', cursive;
     font-size: 50px;
     background: transparent;
-    filter: opacity(0.4);
+    filter: opacity(0.8);
     z-index: 100;
     width: 7%;
-    margin-top: -25%;
+    margin-top: -10%;
+    margin-left: 38%;
+}
+#SIGNUP2{
+    position: absolute;
+    font-family: 'Nova Square', cursive;
+    font-size: 50px;
+    background: transparent;
+    filter: opacity(0.8);
+    z-index: 100;
+    width: 7%;
+    margin-top: -15%;
     margin-left: 38%;
 }
 
-.B1,.B2{
+.B1,.B2, .B3{
     width:350%;
     border: black;
     font-family: 'Nova Square', cursive;
     font-size: 50px;
+}
+.B1:hover,.B2:hover, .B3:hover{
+    background-color: white;
+    cursor: pointer;
+
 }
