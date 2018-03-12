@@ -28,6 +28,7 @@
 
 <body>
 <div class="container-fluid header" align="middle"><h1><strong>Welcome to Swasthya Help Portal</strong></h1></div>
+<hr>
 <div class="row">
     <div class="col-sm-4 c1">
         <div class="container-fluid c1a map">
@@ -68,15 +69,15 @@
             </div><br>
             <br>
             <div class="form-group fr1">
-                <label for="f4"><b>Contact Number</b> </label>
+                <label for="f4"><b>Necessity-Index(1-10)</b> </label>
                 <input type="number" class="form-control" id="f4" name="phonenum">
             </div>
 
             <br>
 
-            <div class="butn" align="middle"><button type="submit" class="btn Bsub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>VOLUNTEER</button></div>
+            <div class="butn" align="middle"><button type="submit" class="btn Bsub btn-block"  value="submit"><span class="glyphicon glyphicon-off" onclick="msg()">VOLUNTEER</span></button></div>
         </form>
-        <div class="btn3" align="middle"><button type="submit" class="btn Bsub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>LOG OFF</button></div>
+        <div class="btn3" align="middle"><a href="index.html"><button type="submit" class="btn Bsub btn-block"  value="submit">LOG OFF</button></a></div>
 
 
 
@@ -103,7 +104,13 @@
     </div>
     </div>
 
+    <script>
+        function msg(){
+            window.alert("Volunteer Request Accepted");
+        }
 
+
+    </script>
 
 
 
