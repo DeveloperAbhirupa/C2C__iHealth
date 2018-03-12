@@ -1,63 +1,122 @@
-.carousel-item{
-    position: absolute;
-    max-height: 100%;
-    max-width: 100%;
-}
 
+.img-logo{
+    max-width:100%;
+}
+.img-logo1{
+    max-width: 30%;
+}
+body{
+    background-image: url("img/abhi.png");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.B5, .B6{
+    padding:20px;
+    margin-bottom: 20px;
+    max-width: 30%;
+}
+.B5{
+    margin-top: 100px;
+}
 .I1{
 
     filter: grayscale(100%);
 }
 
-.horizontal-center{
-    margin-left: 50%;
-}
 
 
 
 .img-logo{
-    width: 50%;
-    position: absolute;
-    z-index: 100;
-}
+    align-content: center;
+    width: 40%;
 
-.vertical-center{
-    margin-top: 30vh;
-    transform: translate(-50%,-50%);
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
 
 }
+.modal-header{
+    background: linear-gradient(#bcbcbc, white);
+}
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 40px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/loader.gif') 50% 50% no-repeat rgb(255,255,255);
+    background-size: 100px;
+    opacity: 1;
+}
+
 
 #SIGNUP{
     position: absolute;
     background: transparent;
-    filter: opacity(0.8);
+    filter: opacity(0.5);
     z-index: 100;
     width: 7%;
-    margin-top: -20%;
+    padding-bottom: 20px;
     margin-left: 38%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
 }
 #LOGIN1{
+
+    margin-top: 100px;
     position: absolute;
     font-family: 'Nova Square', cursive;
     font-size: 50px;
     background: transparent;
-    filter: opacity(0.8);
+    filter: opacity(0.5);
     z-index: 100;
     width: 7%;
-    margin-top: -10%;
+    padding-bottom: 20px;
     margin-left: 38%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
 }
 #SIGNUP2{
     position: absolute;
     font-family: 'Nova Square', cursive;
     font-size: 50px;
     background: transparent;
-    filter: opacity(0.8);
+    filter: opacity(0.5);
     z-index: 100;
     width: 7%;
-    margin-top: -15%;
+    padding-bottom: 20px;
     margin-left: 38%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
 }
+.f1a, .f2a{
+    color:white;
+    font-size: 20px;
+    width:30%;
+    margin-top: 20px;
+}
+
 
 .B1,.B2, .B3{
     width:350%;
@@ -65,8 +124,9 @@
     font-family: 'Nova Square', cursive;
     font-size: 50px;
 }
-.B1:hover,.B2:hover, .B3:hover{
-    background-color: white;
+.B1:hover,.B2:hover, .B3:hover, .B5:hover, .B6:hover{
+    background-color: #a2abf1;
+
     cursor: pointer;
 
 }

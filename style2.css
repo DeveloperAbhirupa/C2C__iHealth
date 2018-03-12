@@ -1,0 +1,62 @@
+body{
+
+}
+
+
+.header{
+    padding: 30px;
+    font-family: 'Poiret One', cursive;
+}
+.c1a{
+    margin-left:10px;
+    height: 100%;
+    border-left: 6px #2d8022;
+}
+
+
+#map1{
+    height:80%;
+}
+#selectbox{
+    width:100%;
+    height: 40px;
+    border-radius: 8px;
+}
+.fr1{
+    height: 40px;
+    border-radius: 8px;
+}
+
+.Breach {
+    margin-left: 53%;
+}
+.btn2{
+    margin-left:35%;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  .  overflow-y: hidden;
+}
+
+
+body{
+    background-image: url("img/abhi2.png");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.B10{
+    max-width:20%;
+}
+.fetchReq{
+
+    margin-top:10%;
+    margin-left:5%;
+}

@@ -1,0 +1,116 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <title>Swasthya</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid header" align="middle"><h1><strong>Welcome to Swasthya Help Portal</strong></h1></div>
+<div class="row">
+    <div class="col-sm-4 c1">
+        <div class="container-fluid c1a map">
+            <iframe id ="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7776.01428531543!2d79.15304567425247!3d12.971394563423951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad47a17f3461c1%3A0x1ace7a2a7f8ccfbf!2sVIT+University%2C+Vellore%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1518936243901"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-sm-4 c2" align="left">
+
+        <h7><strong>CHOOSE YOUR PREFERRED LOCATION:</strong></h7>
+        <br><br>
+<select id="selectbox" placeholder="Choose your location">
+    <option value="Paradarami">Paradarami</option>
+    <option value="Melmoil">Melmoil</option>
+    <option value="Khaderpet">Khaderpet</option>
+    <option value="Payampalli">Payampalli</option>
+    <option value="Vinnamangalam">Vinnamangalam</option>
+    <option value="Vallimallai">Vallimallai</option>
+    <option value="Valathoor">Valathoor</option>
+
+</select>
+        <br>
+        <br>
+        <form role="form" method="post">
+
+            <div class="form-group fr1">
+                <label for="f1"><b>FROM:</b></label>
+                <input type="time" class="form-control" id="f1"  name="from">
+            </div><br>
+            <div class="form-group fr1">
+                <label for="f2"><b>TO:</b> </label>
+                <input type="time" class="form-control" id="f2"  name="to">
+            </div><br>
+            <br>
+            <div class="form-group fr1">
+                <label for="f3"><b>DATE OF AVAILABILITY:</b></label>
+                <input type="date" class="form-control" id="f3" name="dateT">
+            </div><br>
+            <br>
+            <div class="form-group fr1">
+                <label for="f4"><b>Contact Number</b> </label>
+                <input type="number" class="form-control" id="f4" name="phonenum">
+            </div>
+
+            <br>
+
+            <div class="butn" align="middle"><button type="submit" class="btn Bsub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>VOLUNTEER</button></div>
+        </form>
+        <div class="btn3" align="middle"><button type="submit" class="btn Bsub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>LOG OFF</button></div>
+
+
+
+
+    </div>
+    <div class="col-sm-3">
+        <iframe src="https://calendar.google.com/calendar/embed?src=rvf2sj8fg2tpsk8t7vfos6160c%40group.calendar.google.com&ctz=Asia%2FCalcutta" style="border: 0" width="460" height="300" frameborder="0" scrolling="no"></iframe>
+        <br><br>
+        <div class="btn" align="middle"><button type="submit" class="btn Breach sub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>LOCATION REACHED</button></div>
+
+        <div class="form-group FetchReq">
+            <label for="f6"><b>Need help, Fetch request</b></label><br>
+            <div class="radio">
+                <label><input type="radio" name="paid_mem" id="f6" value="true"> PHYSIOTHERAPIST</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="paid_mem" id="f6" value="true"> AMBULANCE</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="paid_mem" id="f6" value="true"> NURSE</label>
+            </div>
+        </div>
+        <div class="btn2" align="middle"><button type="submit" class="btn Bfetch sub btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span>FETCH</button></div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
